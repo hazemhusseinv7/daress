@@ -46,7 +46,7 @@ const Button = ({
   return (
     <Link href={link} className={`${classNames} w-full max-w-xs`}>
       <button
-        className="relative rounded-full flex items-center w-full max-w-xs text-main-color-1"
+        className="relative rounded-full flex items-center w-full max-w-xs text-orange-500"
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
       >

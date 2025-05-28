@@ -22,15 +22,15 @@
 }
 
 @theme inline {
-  --color-main-color-1: var(--color-main-color-1);
-  --color-main-color-2: var(--color-main-color-2);
-  --color-main-color-3: var(--color-main-color-3);
+  --color-main-color-1: var(--main-color-1);
+  --color-main-color-2: var(--main-color-2);
+  --color-main-color-3: var(--main-color-3);
 
-  --color-alt-color-1: var(--color-alt-color-1);
-  --color-alt-color-2: var(--color-alt-color-2);
-  --color-alt-color-3: var(--color-alt-color-3);
-  --color-alt-color-4: var(--color-alt-color-4);
-  --color-alt-color-5: var(--color-alt-color-5);
+  --color-alt-color-1: var(--alt-color-1);
+  --color-alt-color-2: var(--alt-color-2);
+  --color-alt-color-3: var(--alt-color-3);
+  --color-alt-color-4: var(--alt-color-4);
+  --color-alt-color-5: var(--alt-color-5);
 
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -60,3 +60,24 @@ body {
   background: var(--background);
   color: var(--foreground);
 }
+
+/* Scrollbar Start */
+/* width */
+::-webkit-scrollbar {
+  @apply w-2 rounded-full;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  @apply bg-gradient-to-t from-alt-color-3 to-alt-color-4;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  @apply bg-gradient-to-t from-alt-color-1 to-alt-color-2 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply from-alt-color-1/70 to-alt-color-2/70;
+}
+/* Scrollbar End */

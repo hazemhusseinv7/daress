@@ -20,8 +20,8 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const items = [
-    { name: "من نحن", link: "/#about-us" },
     { name: "خدماتنا", link: "/#services" },
+    { name: "من نحن", link: "/#about-us" },
     { name: "المدونة", link: "/blog" },
   ];
 
@@ -40,6 +40,7 @@ const Header = () => {
               width={56}
               height={56}
               alt={"Logo"}
+              priority
             />
           </Link>
         </NavbarBrand>
@@ -59,7 +60,7 @@ const Header = () => {
           <Button
             as={Link}
             className="bg-main-color-2 text-main-color-3 hover:text-main-color-3/80"
-            href="#"
+            href="/contact-us"
             variant="flat"
           >
             تواصل معنا

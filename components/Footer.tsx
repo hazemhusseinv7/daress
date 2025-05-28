@@ -9,8 +9,8 @@ import {
 } from "react-icons/fa6";
 
 const items = [
-  { name: "من نحن", link: "/#about-us" },
   { name: "خدماتنا", link: "/#services" },
+  { name: "من نحن", link: "/#about-us" },
   { name: "المدونة", link: "/blog" },
 ];
 
@@ -35,9 +35,9 @@ const socialMedia = [
 
 const Footer = () => {
   return (
-    <footer className="mt-auto w-full max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 mx-auto">
+    <footer className="w-full py-10 px-4 sm:px-6 lg:px-8 mt-20 bg-gradient-to-tl from-main-color-2/40 to-transparent">
       {/* Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-3 items-center gap-5">
+      <div className="grid grid-cols-1 md:grid-cols-3 items-center gap-5 max-w-[85rem] mx-auto">
         <div>
           <Link className="flex-none" href="/" aria-label="Logo">
             <Image
