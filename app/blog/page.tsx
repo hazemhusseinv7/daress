@@ -24,11 +24,11 @@ export default function Page() {
   return (
     <main>
       {/* Hero */}
-      <div className="relative overflow-hidden min-h-[27rem] bg-gradient-to-t from-main-color-4 to-main-color-5">
+      <div className="relative min-h-[27rem] bg-gradient-to-t from-alt-color-4 to-alt-color-5">
         <div className="relative z-10">
           <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-16">
             <div className="max-w-2xl text-center mx-auto">
-              <p className="inline-block text-sm font-medium bg-clip-text bg-linear-to-l from-blue-600 to-violet-500 text-transparent dark:from-blue-400 dark:to-violet-400">
+              <p className="inline-block text-sm font-medium bg-clip-text bg-linear-to-l text-transparent from-main-color-2 to-alt-color-1">
                 Lorem ipsum
               </p>
 
@@ -62,7 +62,7 @@ export default function Page() {
             // Card
             <Link
               key={i}
-              className="group hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 rounded-xl p-5 transition dark:hover:bg-white/10 dark:focus:bg-white/10"
+              className="group bg-gray-100/80 hover:bg-gray-200/80 focus:outline-hidden focus:bg-gray-200/80 rounded-xl p-5 transition dark:hover:bg-white/10 dark:focus:bg-white/10"
               href={post.link}
             >
               <div className="w-full aspect-[16/10]">

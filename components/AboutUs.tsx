@@ -34,7 +34,7 @@ const AboutUs = () => {
       <div dir="ltr">
         <Video
           src={aboutUs}
-          className="max-w-4/5 md:max-w-2/3 mx-auto mt-20"
+          className="max-w-9/10 md:max-w-2/3 mx-auto mt-20"
           style={{
             "--media-primary-color": "var(--main-color-2)",
             "--media-secondary-color": "var(--main-color-3)",

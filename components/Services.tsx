@@ -6,25 +6,25 @@ const services = [
     title: "التدقيق اللغوي",
     description:
       "سواءٌ كنتَ طالبًا في الجامعة، باحثًا أكاديميًّا أو مؤلفًا، فإن التدقيقَ اللغوي هو خطوةٌ جوهريةٌ لإخراجِ الأبحاث، مذكراتِ التخرج، أو الأعمالِ الأدبية، في أحسنِ صورةٍ مُمكنة..",
-    color: "",
+    link: "/services/service-1",
   },
   {
     title: "التنسيق الفني",
     description:
       "نقدم تنسيقًا فنيًا يتناسبُ ويتماشى مع جميع المعاييرِ المتعارفِ عليها، سوف نهتم بجميعِ التفاصيل الفنية لِنضمنَ الإخراجَ السَّليمَ والمميَّزَ للأبحاث",
-    color: "",
+    link: "/services/service-2",
   },
   {
     title: "المراجعة العلمية للأبحاث",
     description:
       "سواء كنت تهدف إلى تحسين دقة عملك الأكاديمي، أو صقل مشاريعك الإبداعية والفنية، فإننا نضمن تقديم أفكارك في قالبٍ يجعلها أكثر تميّزًا، وأشد تأثيرًا!",
-    color: "",
+    link: "/services/service-3",
   },
   {
     title: "الفهرسة الإلكترونية",
     description:
       "سواء كنت طالبًا في الجامعة، باحثًا أكاديميًّا أو مؤلفًا، فإن الفهرسة الإلكترونية هي أمرٌ جوهري لإخراج الأبحاث والكتب بشكل منظم، وفي أسلمِ صورةٍ ممكنة.",
-    color: "",
+    link: "/services/service-4",
   },
 ];
 
@@ -83,7 +83,7 @@ const Services = () => {
               <div className="mt-auto flex border-t border-gray-200">
                 <Link
                   className="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-white text-gray-800 shadow-2xs hover:bg-gray-100 focus:outline-hidden focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800 dark:focus:bg-neutral-800 transition-colors duration-300 group-hover/card:text-main-color-1 group-hover/card:animate-pulse"
-                  href="#"
+                  href={service.link || "#"}
                 >
                   استكشف الخدمة
                 </Link>
