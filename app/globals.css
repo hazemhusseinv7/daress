@@ -1,26 +1,62 @@
 @import "tailwindcss";
+@plugin '../hero.ts';
+@source '../node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}';
+@import "preline/variants.css";
+@source "../node_modules/preline/dist/*.js";
+
+/* @custom-variant dark (&:is(.dark *)); */
 
 :root {
+  --main-color-1: #655eab;
+  --main-color-2: #918ce6;
+  --main-color-3: #381750;
+
+  --alt-color-1: #c59776;
+  --alt-color-2: #e6bf98;
+  --alt-color-3: #fee0bc;
+  --alt-color-4: #fff6d9;
+  --alt-color-5: #fbf8f3;
+
   --background: #ffffff;
   --foreground: #171717;
 }
 
 @theme inline {
+  --color-main-color-1: var(--color-main-color-1);
+  --color-main-color-2: var(--color-main-color-2);
+  --color-main-color-3: var(--color-main-color-3);
+
+  --color-alt-color-1: var(--color-alt-color-1);
+  --color-alt-color-2: var(--color-alt-color-2);
+  --color-alt-color-3: var(--color-alt-color-3);
+  --color-alt-color-4: var(--color-alt-color-4);
+  --color-alt-color-5: var(--color-alt-color-5);
+
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+
+  --font-noto-kufi-arabic: var(--font-noto-kufi-arabic);
 }
 
-@media (prefers-color-scheme: dark) {
+/* Adds pointer cursor to buttons */
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+}
+
+/* Defaults hover styles on all devices */
+@custom-variant hover (&:hover);
+
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
 }
