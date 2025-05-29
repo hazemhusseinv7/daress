@@ -4,14 +4,14 @@ import aboutUs from "@/videos/about-us.mp4";
 const AboutUs = () => {
   return (
     <section id="about-us" className="mt-32">
-      <div className="max-w-[40rem] mx-auto text-center px-8">
+      <div className="max-w-[67rem] mx-auto text-center px-8">
         <div className="flex justify-center items-center">
-          <h2 className="font-bold text-5xl md:text-8xl mb-4 text-main-color-1">
+          <h2 className="font-bold text-5xl md:text-8xl leading-[1.3] mb-4 text-main-color-1">
             من نحن
           </h2>
         </div>
 
-        <div className="flex flex-col gap-1 font-light text-main-color-3">
+        <div className="flex flex-col gap-1 text-start font-light text-main-color-3">
           <span>
             مركز بحثيُّ له مجموعة من الإصدارات المعرفية والتاريخية المتعلقة
             بتراجم الأعلام يطمح للريادة في الصناعة المعرفية المبتكرة.
@@ -31,6 +31,7 @@ const AboutUs = () => {
           </span>
         </div>
       </div>
+
       <div dir="ltr">
         <Video
           src={aboutUs}

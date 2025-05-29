@@ -4,7 +4,7 @@ import Button from "@/components/Button";
 
 const Hero = () => {
   return (
-    <section className="h-[calc(100vh-4rem)] relative overflow-hidden bg-gradient-to-t from-alt-color-4 to-alt-color-5">
+    <section className="h-[calc(100vh-4rem)] max-h-[800px] relative overflow-hidden bg-gradient-to-t from-alt-color-4 to-alt-color-5">
       <div className="absolute max-w-3xl flex flex-col justify-center items-center gap-4 text-center p-4 md:p-8 max-md:mt-10 z-20 left-0 right-0 mx-auto">
         <div>
           <h1 className="font-bold text-4xl md:text-5xl lg:text-7xl leading-[1.3] mb-4 text-main-color-1">

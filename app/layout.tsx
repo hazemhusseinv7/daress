@@ -13,7 +13,8 @@ const notoKufiArabic = Noto_Kufi_Arabic({
 
 export const metadata: Metadata = {
   title: "دارس",
-  description: "مركز بحثيُّ له مجموعة من الإصدارات المعرفية والتاريخية المتعلقة بتراجم الأعلام يطمح للريادة في الصناعة المعرفية المبتكرة.",
+  description:
+    "مركز بحثيُّ له مجموعة من الإصدارات المعرفية والتاريخية المتعلقة بتراجم الأعلام يطمح للريادة في الصناعة المعرفية المبتكرة.",
 };
 
 export default function RootLayout({

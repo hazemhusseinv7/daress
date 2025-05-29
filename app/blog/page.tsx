@@ -57,12 +57,12 @@ export default function Page() {
       {/* Card Blog */}
       <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
         {/* Grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid group/grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {blogPosts.map((post, i) => (
             // Card
             <Link
               key={i}
-              className="group bg-gray-100/80 hover:bg-gray-200/80 focus:outline-hidden focus:bg-gray-200/80 rounded-xl p-5 transition dark:hover:bg-white/10 dark:focus:bg-white/10"
+              className="group/card bg-gray-100/80 hover:bg-gray-200/80 focus:outline-hidden focus:bg-gray-200/80 rounded-xl p-5 transition dark:hover:bg-white/10 dark:focus:bg-white/10 group-hover/grid:opacity-50 hover:!opacity-100"
               href={post.link}
             >
               <div className="w-full aspect-[16/10]">
@@ -74,12 +74,12 @@ export default function Page() {
                   alt="Blog Image"
                 />
               </div>
-              <h3 className="mt-5 text-xl text-gray-800 dark:text-neutral-300 dark:hover:text-white">
+              <h3 className="mt-5 text-xl text-gray-800 dark:text-neutral-300 dark:hover:text-white transition-all duration-300 group-hover/card:text-main-color-1">
                 {post.title}
               </h3>
-              <span className="mt-3 inline-flex items-center gap-x-1 text-sm font-semibold text-gray-800 dark:text-neutral-200">
+              <span className="mt-3 inline-flex items-center gap-x-1 text-sm font-semibold text-gray-800 dark:text-neutral-200 transition-all duration-300 group-hover/card:text-main-color-1 group-hover/card:animate-pulse">
                 اقرأ المزيد
-                <GoChevronLeft className="shrink-0 size-4 transition ease-in-out group-hover:-translate-x-1 group-focus:-translate-x-1" />
+                <GoChevronLeft className="shrink-0 size-4 transition-all duration-300 ease-in-out group-hover/card:-translate-x-1 group-focus/card:-translate-x-1" />
               </span>
             </Link>
             // End Card
